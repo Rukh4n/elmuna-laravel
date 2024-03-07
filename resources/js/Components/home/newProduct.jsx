@@ -2,8 +2,8 @@ export default function NewProduct() {
     return (
         <>
             <section style={{ height: "985px" }}>
-                <div className="container">
-                    <div className="section-header">
+                <div className="container my-5">
+                    <div className="my-5 d-grid justify-content-center card">
                         <p>Segera <span>Beli</span> Produk Terbaru</p>
                         <h2>Laptop Terpopuler</h2>
                     </div>
@@ -34,9 +34,9 @@ export default function NewProduct() {
                                                     <p className="new-cars-para2">
                                                         Harga 19 Jutaan.
                                                     </p>
-                                                    <button className="welcome-btn new-cars-btn" onClick={() => window.location.href = '#'}>
+                                                    <a href="products" className="btn btn-primary" onClick={() => window.location.href = '#'}>
                                                         view details
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@ export default function NewProduct() {
                                                     <p className="new-cars-para2">
                                                         Harga 6 Jutaan
                                                     </p>
-                                                    <button className="welcome-btn new-cars-btn" onClick={() => window.location.href = '#'}>
+                                                    <button className="btn btn-primary" onClick={() => window.location.href = 'products'}>
                                                         view details
                                                     </button>
                                                 </div>
@@ -81,7 +81,7 @@ export default function NewProduct() {
                                         <div className="row">
                                             <div className="col-md-7 col-sm-12">
                                                 <div className="new-cars-img">
-                                                    <img src="assets/images/new-cars-model/ncm3.png" alt="img" />
+                                                    <img src="assets/images/new-cars-model/ncm3.png" alt="img" style={{ width: "650px" }} />
                                                 </div>
                                             </div>
                                             <div className="col-md-5 col-sm-12">
@@ -95,7 +95,7 @@ export default function NewProduct() {
                                                     <p className="new-cars-para2">
                                                         2 Jutaan
                                                     </p>
-                                                    <button className="welcome-btn new-cars-btn" onClick={() => window.location.href = '#'}>
+                                                    <button className="btn btn-primary" onClick={() => window.location.href = 'products'}>
                                                         view details
                                                     </button>
                                                 </div>

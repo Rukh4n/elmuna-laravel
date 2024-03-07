@@ -1,12 +1,15 @@
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-// componest
-import Headers from '@/Components/home/headers';
-import NewProduct from '@/Components/home/newProduct';
-import Services from '@/Components/home/services';
-import Teams from '@/Components/home/teeams';
-import Colaboration from '@/Components/home/colaboration';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// import Componens
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import Footer from '@/Components/footer';
+
+// import Pages
+import Home from './Home';
+import Articles from './Articles';
+import Products from './Products';
+
 export default function Dashboard({ auth }) {
     return (
         <>
@@ -14,11 +17,10 @@ export default function Dashboard({ auth }) {
                 user={auth.user}
             // header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Elmuna</h2>}
             >
-                <Head 
-                title="Elmuna Computindo"
-                
-                />
+                <Head
+                    title="Elmuna Computindo"
 
+                />
 
                 {/* <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -27,12 +29,16 @@ export default function Dashboard({ auth }) {
                     </div>
                 </div>
             </div> */}
+
             </AuthenticatedLayout>
-            <Headers></Headers>
-            <NewProduct></NewProduct>
-            <Services></Services>
-            <Teams></Teams>
-            <Colaboration></Colaboration>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home/>}></Route>
+                    <Route path='/articles' element={<Articles/>}></Route>
+                    <Route path='/products' element={<Products/>}></Route>
+                </Routes>
+            </BrowserRouter>
+            
             <Footer></Footer>
         </>
     );

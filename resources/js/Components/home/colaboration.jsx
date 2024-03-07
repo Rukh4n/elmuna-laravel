@@ -2,8 +2,8 @@ export default function Colaboration() {
     return (
         <>
             <section id="brand" className="brand">
-                <div className="container">
-                    <p className="centered-text">KOLABORASI & KEMITRAAN</p>
+                <div className="container d-grid justify-content-center m-5">
+                    <h3 className="centered-text">KOLABORASI & KEMITRAAN</h3>
                 </div>
 
                 <div className="brand-area">
@@ -11,7 +11,7 @@ export default function Colaboration() {
                         {/* Start Brand */}
                         <div className="col-auto my-3 ">
                             <a href="#">
-                                <img src="assets/images/brand/br1.png" alt="brand-image" width={100} s />
+                                <img src="assets/images/brand/br1.png" alt="brand-image" width={100} />
                             </a>
                         </div>
                         <div className="col-auto my-3">
@@ -44,5 +44,5 @@ export default function Colaboration() {
                 </div>
             </section>
         </>
-    )
+    );
 }

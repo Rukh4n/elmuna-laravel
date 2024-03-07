@@ -31,32 +31,32 @@ export default function Headers() {
                             className="d-block w-100"
                             alt="Descriptive image alt text"
                         />
-                        <div className="carousel-caption d-none d-md-block">
+                        {/* <div className="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="carousel-item">
                         <img
-                            src="assets/images/welcome-hero/baner_kontak_elmuna_computindo.jpg"
+                            src="assets/images/welcome-hero/baner_kontak_elmuna_computindo.png"
                             className="d-block w-100"
                             alt="Descriptive image alt text"
                         />
-                        <div className="carousel-caption d-none d-md-block">
+                        {/* <div className="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="carousel-item">
                         <img
-                            src="assets/images/welcome-hero/11.jpeg"
+                            src="assets/images/welcome-hero/baner_akhir_elmuna_computindo.png"
                             className="d-block w-100"
                             alt="Descriptive image alt text"
                         />
-                        <div className="carousel-caption d-none d-md-block">
+                        {/* <div className="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <button

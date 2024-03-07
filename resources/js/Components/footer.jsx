@@ -1,105 +1,81 @@
+import React from 'react';
+
 export default function Footer() {
     return (
-        <>
-            <footer id="contact" className="contact py-5" style={{ backgroundColor: '#2A2D54', color: 'white' }}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6">
-                            <div className="single-footer-widget">
-                                <div className="footer-logo">
-                                    <a href="index.html" className="text-decoration-none">Elmuna Computindo</a>
-                                </div>
-                                <p>
-                                    Banyak Produk Unggulan yang tersedia dengan harga yang bersahabat.
+        <footer id="contact" className="py-5 bg-dark text-white">
+            <div className="container-fluid">
+                <div className="row justify-content-center">
+                    <div className="col-md-4">
+                        <div className="card text-white bg-dark">
+                            <div className="card-header">
+                                <h5 className="text-left">Elmuna Computindo</h5>
+                            </div>
+                            <div className="card-body">
+                                <dic className="card-text text-left">
+                                    <div className='d-grid justify-content-center '>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-minus-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5" />
+                                        </svg>
+                                    </div>
+
+                                    <div className="d-grid justify-content-center">
+                                        <a href="https://wa.me/6285325636373" className='btn'>085325636373</a>
+                                    </div>
+                                </dic>
+                                <p className="card-text text-left">
+                                    <div className="d-grid justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                                            <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                                        </svg>
+                                    </div>
+                                    <a href='https://maps.app.goo.gl/emwcnAJrKdLyKk4t5' className='btn'> Jl. Soka Petanahan Km. 6 No. 10 Plumbon Klegenwonosari RT 02/02 Kec. Klirong Kab. Kebumen 54381</a>
                                 </p>
-                                <div className="footer-contact">
-                                    <p>info@elmunakebumen73@gmail.com</p>
-                                    <p>+62 822-2672-7986</p>
-                                </div>
                             </div>
                         </div>
-                        <div className="col-md-2 col-sm-6">
-                            <div className="single-footer-widget">
-                                <h2>about devloon</h2>
-                                <ul>
-                                    <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>about us</a></li>
-                                    <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>career</a></li>
-                                    <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>terms <span> of service</span></a></li>
-                                    <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>privacy policy</a></li>
+                    </div>
+
+                    <div className="col-md-4">
+                        <div className="card text-white bg-dark">
+                            <div className="card-body">
+                                <h5 className="text-left">Akun Sosial Media</h5>
+                            </div>
+                            <div className="card-body">
+                                <ul className="list-unstyled">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                        </svg>
+                                        <a href="https://www.instagram.com/elmunacomputindo?igshid=YmMyMTA2M2Y%3D" className="btn card-text text-left">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                        </svg>
+                                        <a href="https://web.facebook.com/profile.php?id=100086652964762&_rdc=1&_rdr" className="btn card-text text-left">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                        </svg>
+                                        <a href="https://www.tiktok.com/@elmuna_computindo" className="btn card-text text-left">TikTok</a>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                        </svg>
+                                        <a href="https://api.whatsapp.com/send/?phone=6282137483931&text&type=phone_number&app_absent=0" className="btn card-text text-left">Whatsapp</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            <div className="single-footer-widget">
-                                <h2>top brands</h2>
-                                <div className="row">
-                                    <div className="col-md-7 col-xs-6">
-                                        <ul>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>LENOVO</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>HP</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>DELL</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>ACER</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>APPLE</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>ASUS</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-md-5 col-xs-6">
-                                        <ul>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop Gaming</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop AMD RYZEN 5</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop Intel I5</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop Editing Video</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop Sekolah Online</a></li>
-                                            <li className="list-group-item"><a href="#" className="text-decoration-none" style={{ color: 'white' }}>Laptop Kerja</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-offset-1 col-md-3 col-sm-6">
-                            <div className="single-footer-widget">
-                                <h2>news letter</h2>
-                                <div className="footer-newsletter">
-                                    <p>
-                                        Subscribe to get latest news update and informations
-                                    </p>
-                                </div>
-                                <div className="hm-foot-email">
-                                    <div className="foot-email-box">
-                                        <input type="text" className="form-control" placeholder="Add Email" style={{ backgroundColor: '#1D1F38', color: 'white' }} />
-                                    </div>
-                                    <div className="foot-email-subscribe">
-                                        <span><i className="fa fa-arrow-right"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <p>
-                                &copy; copyright.designed and developed by <a href="https://www.themesine.com/" className="text-decoration-none" style={{ color: 'white' }}>elmuna
-                                    computindo</a>.
-                            </p>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="footer-social">
-                                <a href="#" className="text-decoration-none" style={{ color: 'white' }}><i className="fa fa-facebook"></i></a>
-                                <a href="#" className="text-decoration-none" style={{ color: 'white' }}><i className="fa fa-instagram"></i></a>
-                                <a href="#" className="text-decoration-none" style={{ color: 'white' }}><i className="fa fa-linkedin"></i></a>
-                                <a href="#" className="text-decoration-none" style={{ color: 'white' }}><i className="fa fa-pinterest-p"></i></a>
-                                <a href="#" className="text-decoration-none" style={{ color: 'white' }}><i className="fa fa-behance"></i></a>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div id="scroll-Top">
-                    <div className="return-to-top">
-                        <i className="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
-                            data-original-title="Back to Top" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </footer>
-        </>
-    )
+            </div>
+
+            <p className="container-fluid mt-5 text-center">
+                &copy; copyright.designed and developed by <a href="https://www.themesine.com/" className="text-decoration-none text-white">elmuna computindo</a>.
+            </p>
+        </footer>
+    );
 }

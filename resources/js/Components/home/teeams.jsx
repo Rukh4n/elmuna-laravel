@@ -1,79 +1,61 @@
+import React from 'react';
+import Stars from '../Stars';
 export default function Teams() {
     return (
         <>
+
+            <div className="container-fluid d-grid justify-content-center m-5">
+                <h1>Penilaian Customer</h1>
+            </div>
+
             <div className="container">
-                <div className="section-header">
-                    <h2>team elmuna computindo</h2>
-                </div>
-                <div className="row">
-                    <div className="row d-flex justify-content-center align-item-centerl">
-                        {/* Start Card Team */}
-                        <div className="col-auto" style={{ width: "300px" }}>
-                            <div className="single-testimonial-box">
-                                <div className="testimonial-description">
-                                    <div className="testimonial-info">
-                                        <div className="testimonial-img">
-                                            <img src="assets/images/clients/c1.JPG" className="rounded-circle" alt="image of clients person" style={{ width: "100px", height: "100px" }} />
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-comment">
-                                        <p>
-                                            Fokus dengan masa depan memang baik, namun jangan sampai kamu sia-siakan momen
-                                            bahagia di hari ini.
-                                        </p>
-                                    </div>
-                                    <div className="testimonial-person">
-                                        <h2><a href="#">Salma Anisa Rinanti</a></h2>
-                                        <h4>Bandung</h4>
-                                    </div>
-                                </div>
+                <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                    <div className="col">
+                        <div className="card text-center">
+                            <div className="card-header">
+                                <img src="assets/images/clients/c1.JPG" className="rounded-circle" alt="image of clients person" style={{ width: "100px", height: "100px" }} />
+                            </div>
+                            <Stars></Stars>
+                            <div className="card-body">
+                                <p className="card-text">salma Anisa Rinanti</p>
+                            </div>
+                            <div className="card-footer text-body-secondary">
+                                Harganya Murah banget, rekomend buat mahasiswa mendang mending sih.
                             </div>
                         </div>
-                        <div className="col-auto" style={{ width: "300px" }}>
-                            <div className="single-testimonial-box">
-                                <div className="testimonial-description">
-                                    <div className="testimonial-info">
-                                        <div className="testimonial-img">
-                                            <img src="assets/images/clients/c2.jpeg" alt="image of clients person" className="rounded-circle" style={{ width: "100px", height: "100px" }} />
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-comment">
-                                        <p>
-                                            Belajarlah karena tidak ada seseorang yang dilahirkan dalam keadaan pintar.
-                                        </p>
-                                    </div>
-                                    <div className="testimonial-person">
-                                        <h2><a href="#">Faul Isnaeni</a></h2>
-                                        <h4>Kebumen</h4>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card text-center">
+                            <div className="card-header">
+                                <img src="assets/images/clients/c2.jpeg" alt="image of clients person" className="rounded-circle" style={{ width: "100px", height: "100px" }} />
+                            </div>
+                            <Stars></Stars>
+                            <div className="card-body">
+                                <p className="card-text">Faul Isnaeni</p>
+                            </div>
+                            <div className="card-footer text-body-secondary">
+                                Barang yang dijual lengkap dan berkualitas banget dech.
                             </div>
                         </div>
-                        <div className="col-auto" style={{ width: "300px" }}>
-                            <div className="single-testimonial-box">
-                                <div className="testimonial-description">
-                                    <div className="testimonial-info">
-                                        <div className="testimonial-img">
-                                            <img src="assets/images/clients/c3.jpeg" alt="image of clients person" className="rounded-circle" style={{ width: "100px", height: "100px" }} />
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-comment">
-                                        <p>
-                                            Min Yoon-gi (bahasa Korea: 민윤기, lahir 9 Maret 1993) lebih dikenal dengan nama
-                                            SUGA. Ia adalah seorang penyanyi rap, penulis lagu, dan produser rekaman.
-                                        </p>
-                                    </div>
-                                    <div className="testimonial-person">
-                                        <h2><a href="#">Nur Hisyam Ali Nugroho</a></h2>
-                                        <h4>Semarang</h4>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card text-center">
+                            <div className="card-header">
+                                <img src="assets/images/clients/c3.jpeg" alt="image of clients person" className="rounded-circle" style={{ width: "100px", height: "100px" }} />
+                            </div>
+                            <Stars></Stars>
+                            <div className="card-body">
+                                <p className="card-text">Nur Hisyam Ali Nugroho</p>
+                            </div>
+                            <div className="card-footer text-body-secondary">
+                                 Udah mudah cara belinya lengkap juga eh bisa cod juga dong.
                             </div>
                         </div>
-                        {/* End Card Team */}
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }

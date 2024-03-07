@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
+use Inertia\Inertia;
 
 class ArticleController extends Controller
 {
@@ -13,7 +14,28 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::all();
+
+        foreach ($articles as $article) {
+            $article->image = url("storage", $article->image);
+        };
+        return Inertia::render('Articles', [
+            'articles' => $articles,
+        ]);
+    }
+    // Top 10 new articles
+
+    public function newArticles() 
+    {
+        $articles = Article::latest()->take(1)->get();
+
+        foreach ($articles as $article) {
+            $article->image = url("storage", $article->image);
+        }
+
+        return Inertia::render('NewArticles', [
+            'articles' => $articles,
+        ]);
     }
 
     /**
@@ -35,10 +57,16 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(string $id)
     {
-        //
+        $article = Article::findOrFail($id);
+        $article->image = url('storage', $article->image);
+
+        return Inertia::render('Article', [
+            'article' => $article,
+        ]);
     }
+
 
     /**
      * Show the form for editing the specified resource.
