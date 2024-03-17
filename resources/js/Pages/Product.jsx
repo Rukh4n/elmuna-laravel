@@ -29,9 +29,9 @@ const Product = ({ product }) => {
         <>
             <NavBar />
             <div className="row">
-                <div className="col-auto m-3">
+                <div className="col-auto m-3" style={{ width : "355px" }}>
                     <div className="card">
-                        <img src={product.image} alt="" className="card-img-top" />
+                        <img src={product.image} alt="" className="card-img-top"/>
                         <div className="card-body">
                             <div className="d-grid gap-2">
                                 <button className="btn btn-success my-3" onClick={handleBuyNow}>Beli Sekarang</button>
@@ -39,7 +39,7 @@ const Product = ({ product }) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-auto m-3" style={{ width: '550px' }}>
+                <div className="col-auto m-3" style={{ width: '600px' }}>
                     <div className="card">
                         <div className="card-body">
                             <h3 className="card-title">{product.name}</h3>
@@ -68,7 +68,7 @@ const Product = ({ product }) => {
                                     <label htmlFor="quantity">Jumlah:</label>
                                     <input type="number" className="form-control" id="quantity" value={quantity} onChange={handleQuantityChange} />
                                 </div>
-                                <p>Total Harga: Rp {totalPrice}</p>
+                                {/* <p>Total Harga: Rp {totalPrice}</p> */}
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Tutup</button>

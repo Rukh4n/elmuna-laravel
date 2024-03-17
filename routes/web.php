@@ -49,6 +49,6 @@ Route::get('profile', [ProfileController::class, 'profilePerusahaan']);
 // Product
 Route::get('/products/{sku}', [ProductController::class, 'show']);
 // Product category
-Route::get('/products/{category}', [ProductController::class, 'Categories']);
+Route::get('/{category}', [ProductController::class, 'Categories']);
 
 require __DIR__.'/auth.php';

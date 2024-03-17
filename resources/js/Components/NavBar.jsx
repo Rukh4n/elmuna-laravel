@@ -25,7 +25,7 @@ export default function NavBar() {
                                 <a className="nav-link text-white" href="/articles">Article</a> {/* Added text-white class */}
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="http://localhost/ecommerce/index.php">Shop</a> {/* Added text-white class */}
+                                <a className="nav-link text-white" href="products">Shop</a> {/* Added text-white class */}
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white" href='profile'>Profile</a> {/* Added text-white class */}
